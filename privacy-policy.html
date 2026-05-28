@@ -203,24 +203,12 @@
             <h2>4. Third-Party Services</h2>
             <p>Trendlo integrates with several third-party services to provide its functionality:</p>
 
-            <h3>4.1 Authentication and Database</h3>
+            <h3>4.1 AI Content Generation</h3>
             <ul>
-                <li><strong>Supabase:</strong> Handles user authentication, stores user data, settings, and post history. Data is encrypted in transit and at rest.</li>
+                <li><strong>Groq</strong> and <strong>Google Gemini</strong> provide the AI models used to generate content. Your prompts and generated content are sent to these services for processing. Available models and providers may change over time.</li>
             </ul>
 
-            <h3>4.2 Backend Infrastructure</h3>
-            <ul>
-                <li><strong>Cloudflare Workers:</strong> Processes API requests, manages OAuth flows, and serves as our backend infrastructure.</li>
-            </ul>
-
-            <h3>4.3 AI Content Generation</h3>
-            <ul>
-                <li><strong>Groq:</strong> Provides AI models (e.g., Llama 3.3 70B) for content generation</li>
-                <li><strong>Google Gemini:</strong> Provides Gemini AI models for content generation</li>
-            </ul>
-            <p>Your prompts and generated content are sent to these services for processing. Available models and providers may change over time as our backend is updated. We recommend reviewing their respective privacy policies.</p>
-
-            <h3>4.4 Social Media Platforms</h3>
+            <h3>4.2 Social Media Platforms</h3>
             <p>When you connect and post to social media platforms, you are subject to their terms of service and privacy policies:</p>
             <ul>
                 <li>X (Twitter)</li>
@@ -235,39 +223,28 @@
                 <li>Instagram</li>
             </ul>
 
-            <h3>4.5 Crash Reporting and Analytics</h3>
+            <h3>4.3 Advertising</h3>
             <ul>
-                <li><strong>Sentry / Glitchtip:</strong> In release builds and only with your opt-in, we collect anonymized crash reports and stack traces to diagnose stability issues. Sensitive headers (Authorization, Cookie, API keys, auth tokens) are stripped before transmission.</li>
-                <li><strong>Firebase Analytics:</strong> Collects aggregated, anonymized usage analytics (screens viewed, features used, app version, device model, OS version) to help us improve the app.</li>
-                <li><strong>Firebase Cloud Messaging (FCM):</strong> Generates a device push token used to deliver notifications (e.g., scheduled post reminders). The token is not linked to your identity beyond your account.</li>
+                <li><strong>Google AdMob:</strong> Displays optional rewarded ads that let free-tier users extend their daily posting and AI generation limits. AdMob may access the device Advertising ID; you can reset or limit this ID in your Android settings. We do not show banner or interstitial ads.</li>
             </ul>
 
-            <h3>4.6 Advertising</h3>
-            <ul>
-                <li><strong>Google AdMob:</strong> Displays optional rewarded ads that allow free-tier users to extend their daily posting and AI generation limits. AdMob may access the device Advertising ID. You can reset or limit this ID via your Android device settings. We do not show banner or interstitial ads.</li>
-            </ul>
+            <h3>4.4 Sign in with Google</h3>
+            <p>If you choose to sign in with Google, Google shares your email address and basic profile information with us via OAuth. We use this only to create and authenticate your Trendlo account.</p>
 
-            <h3>4.7 Authentication</h3>
-            <ul>
-                <li><strong>Google Sign-In:</strong> If you choose to sign in with Google, Google shares your email address and basic profile information with us via OAuth. We use this only to create and authenticate your Trendlo account.</li>
-            </ul>
-
-            <h3>4.8 Premium Subscriptions</h3>
-            <ul>
-                <li><strong>RevenueCat:</strong> Manages premium subscriptions and in-app purchases. RevenueCat assigns a customer identifier tied to your account. Payment information is processed by the Google Play Store and is not visible to us or RevenueCat.</li>
-            </ul>
+            <h3>4.5 Other Services</h3>
+            <p>To operate the app we also rely on standard third-party services for cloud storage and authentication, backend infrastructure, push notifications, crash reporting (release builds, opt-in only), usage analytics, and subscription billing. These services receive only the minimum data needed to perform their function.</p>
         </div>
 
         <div class="legal-section">
             <h2>5. Data Storage and Security</h2>
             
             <h3>5.1 Storage Location</h3>
-            <p>Account data, settings, and post history are stored in Supabase databases with encryption at rest and in transit. Social media credentials are stored <strong>locally on your device only</strong> using encrypted secure storage and are never uploaded to our servers.</p>
+            <p>Account data, settings, and post history are stored in a secure cloud database with encryption at rest and in transit. Social media credentials are stored <strong>locally on your device only</strong> using encrypted secure storage and are never uploaded to our servers.</p>
 
             <h3>5.2 Security Measures</h3>
             <ul>
                 <li>HTTPS encryption for data transmission</li>
-                <li>Secure token-based authentication via Supabase</li>
+                <li>Secure token-based authentication</li>
                 <li>On-device encrypted storage for social media credentials</li>
                 <li>Ongoing security updates</li>
             </ul>
@@ -312,7 +289,7 @@
             <p>We do not sell, rent, or trade your personal information to third parties for marketing purposes.</p>
 
             <h3>7.2 Service Providers</h3>
-            <p>We share data with service providers only as necessary to operate our service (Supabase, Cloudflare, AI providers, etc.).</p>
+            <p>We share data with service providers only as necessary to operate our service (AI providers, cloud infrastructure, advertising, etc.).</p>
 
             <h3>7.3 Legal Requirements</h3>
             <p>We may disclose your information if required by law, court order, or to protect our rights and safety.</p>
